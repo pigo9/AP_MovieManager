@@ -19,7 +19,6 @@ movie_manager = {
 }
 print(movie_manager)
 registar_realizador(movie_manager, 'Spielberg')
-registar_realizador(movie_manager, 'Scott')
 print(movie_manager)
 registar_ator(movie_manager, 'João')
 print(movie_manager)
