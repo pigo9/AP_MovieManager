@@ -9,7 +9,7 @@ def main():
 
         if commands[0] == "RR":
             commandRR(commands, mm)
-        if commands[0] == "RA":
+        elif commands[0] == "RA":
             commandRA(commands, mm)
  
 def commandRA(commands, mm):
@@ -18,7 +18,7 @@ def commandRA(commands, mm):
         print("Ator existente.")
     else:
         mml.add_ator(mm, name)
-        print("Ator adicionado com sucesso.")
+        print("Ator registado com sucesso.")
 
 def commandRR(commands, mm):
     name = commands[1]
