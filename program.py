@@ -6,7 +6,7 @@ def main():
     while True:
         line = input()
         
-        commands = input.split(" ")
+        commands = line.split(" ")
 
         if commands[0] == "RR":
             commandRR(commands, mm)
