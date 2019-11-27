@@ -9,7 +9,17 @@ def main():
 
         if commands[0] == "RR":
             commandRR(commands, mm)
+        if commands[0] == "RA":
+            commandRA(commands, mm)
  
+def commandRA(commands, mm):
+    name = commands[1]
+    if mml.has_actor(mm, name):
+        print("Ator existente.")
+    else:
+        mml.add_ator(mm, name)
+        print("Ator adicionado com sucesso.")
+
 def commandRR(commands, mm):
     name = commands[1]
     if mml.has_director(mm, name):
