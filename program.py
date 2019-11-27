@@ -1,21 +1,21 @@
-import movie_manager as mm
+import movie_manager as mml
 
 def main():
-    movie_manager_D = {}
+    mm = {}
     while True:
         line = input()
         
         commands = input.split(" ")
 
         if commands[0] == "RR":
-            commandRR(commands, movie_manager_D)
-
-def commandRR(commands, movie_manager_D):
+            commandRR(commands, mm)
+ 
+def commandRR(commands, mm):
     name = commands[1]
-    if mm.has_director(movie_manager_D, name):
+    if mml.has_director(mm, name):
         print("Realizador existente.")
     else:
-        mm.add_director(movie_manager_D, name)
+        mml.add_director(mm, name)
         print("Realizador registado com sucesso.")
 
 if __name__ == "__main__":
