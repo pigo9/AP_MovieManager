@@ -1,7 +1,8 @@
 import movie_manager as mml
 
 def main():
-    mm = {}
+    mm = mml.new_movie_manager()
+
     while True:
         line = input()
         

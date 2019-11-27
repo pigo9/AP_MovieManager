@@ -1,3 +1,10 @@
+def new_movie_manager():
+    return {
+        'directors': [],
+        'actors': [],
+        'movies': []
+    }
+
 def has_director(mm, name):
     pass
 
