@@ -11,6 +11,16 @@ def main():
             commandRR(commands, mm)
         elif commands[0] == "RA":
             commandRA(commands, mm)
+        elif commands[0] == "RF":
+            commandRF(commands, mm)
+
+def commandRR(commands, mm):
+    name = commands[1]
+    if mml.has_director(mm, name):
+        print("Realizador existente.")
+    else:
+        mml.add_director(mm, name)
+        print("Realizador registado com sucesso.")
  
 def commandRA(commands, mm):
     name = commands[1]
@@ -20,13 +30,8 @@ def commandRA(commands, mm):
         mml.add_ator(mm, name)
         print("Ator registado com sucesso.")
 
-def commandRR(commands, mm):
-    name = commands[1]
-    if mml.has_director(mm, name):
-        print("Realizador existente.")
-    else:
-        mml.add_director(mm, name)
-        print("Realizador registado com sucesso.")
+def commandRF(comamnds, mm):
+    pass
 
 if __name__ == "__main__":
     main()
